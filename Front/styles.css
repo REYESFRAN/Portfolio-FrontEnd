@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-image: url("/imagenes/Fondos/fondo-inicio-ryan-hafey-i5n6WHtvQ4c-unsplash.jpg");
+    background-position:fixed ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+#inicio .contenido header{
+    background-color: rgba(0,0,0,.8);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;    
+}
+#inicio .contenido header .contenido-header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+#inicio .contenido header .contenido-header h1{
+    text-align: center;
+    color: rgb(40, 233, 233);
+}
+#inicio .contenido header .contenido-header nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+#inicio .contenido header .contenido-header nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    margin: 0 12px;
+    font-weight: 400;
+    transition: .5s;
+}
+#inicio .contenido header .contenido-header nav ul a:hover{
+    color:rgb(40, 233, 233);
+    background-color: #afafaf8f;
+    border-radius: 4px;
+    padding: 3px;
+}   
+#inicio .contenido .presentacion{
+    max-width: 1100px;
+    height: 400px;
+    margin:00px 20% auto 20%;
+    padding: 10px;
+    display: flex;
+    flex-direction:row;
+    align-items: 1/4vh;
+    justify-content: center;
+    color: #fff;
+
+   
+}
+
+#p-frases{
+    margin: 200px 60px auto auto;
+}
+
+#img-container{
+    height: 600px;
+    margin: auto;
+
+}
+#img-perfil{
+    height: 600px;
+    border-radius: 100%;
+    
+
+}
+
+#inicio .contenido .presentacion #frasedos{
+    color: rgb(40, 233, 233);
+    margin: 2px 105px;
+}
+#inicio .contenido .presentacion #fraseuno{
+    margin: 2px 25px;
+}
+#inicio .contenido .presentacion a{
+    width: 50%;
+    text-decoration: none;
+    display:  inline-block;
+    margin: 25px;
+    padding: 20px 25px;
+    border: 2px solid rgb(40, 233, 233);
+    border-radius: 50px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .5s;
+    align-content: center;
+    
+    
+}
+#inicio .contenido .presentacion a:hover{
+    background: rgb(40, 233, 233);
+}
+
+#icono-nav{
+    color: bisque;
+    background-color: aqua;
+} 
+
+
+
+@media screen and (min-width: 1000px) {
+    #icono-nav{
+        display: none;
+    } 
+    nav {
+        margin: auto;
+    }
+}
