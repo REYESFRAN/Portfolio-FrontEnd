@@ -8,7 +8,7 @@
 html{
     scroll-behavior: smooth;
 }
-body{
+#inicio{
     background-image: url("/imagenes/Fondos/fondo-inicio-ryan-hafey-i5n6WHtvQ4c-unsplash.jpg");
     background-position:fixed ;
     background-repeat: no-repeat;
@@ -17,14 +17,14 @@ body{
     height: 100vh;
 }
 
-#inicio .contenido header{
+.contenido header{
     background-color: rgba(0,0,0,.8);
     position: fixed;
     width: 100%;
     z-index: 100;
     top: 0;    
 }
-#inicio .contenido header .contenido-header{
+.contenido-header{
     max-width: 1100px;
     margin: auto;
     display: flex;
@@ -32,29 +32,29 @@ body{
     align-items: center;
     padding: 10px 20px;
 }
-#inicio .contenido header .contenido-header h1{
+.contenido-header h1{
     text-align: center;
     color: rgb(40, 233, 233);
 }
-#inicio .contenido header .contenido-header nav ul{
+.contenido-header nav ul{
     list-style: none;
     display: flex;
     align-items: center;
 }
-#inicio .contenido header .contenido-header nav ul li a{
+.contenido-header nav ul li a{
     text-decoration: none;
     color: #fff;
     margin: 0 12px;
     font-weight: 400;
     transition: .5s;
 }
-#inicio .contenido header .contenido-header nav ul a:hover{
+.contenido-header nav ul a:hover{
     color:rgb(40, 233, 233);
     background-color: #afafaf8f;
     border-radius: 4px;
     padding: 3px;
 }   
-#inicio .contenido .presentacion{
+.presentacion{
     max-width: 1100px;
     height: 400px;
     margin:00px 20% auto 20%;
@@ -67,11 +67,9 @@ body{
 
    
 }
-
 #p-frases{
     margin: 200px 60px auto auto;
 }
-
 #img-container{
     height: 600px;
     margin: auto;
@@ -80,19 +78,16 @@ body{
 #img-perfil{
     height: 600px;
     border-radius: 100%;
-    
-
 }
-
-#inicio .contenido .presentacion #frasedos{
+#frasedos{
     color: rgb(40, 233, 233);
     margin: 2px 105px;
 }
-#inicio .contenido .presentacion #fraseuno{
+#fraseuno{
     margin: 2px 25px;
 }
-#inicio .contenido .presentacion a{
-    width: 50%;
+.presentacion a{
+    width: 62%;
     text-decoration: none;
     display:  inline-block;
     margin: 25px;
@@ -107,17 +102,13 @@ body{
     
     
 }
-#inicio .contenido .presentacion a:hover{
+.presentacion a:hover{
     background: rgb(40, 233, 233);
 }
-
 #icono-nav{
     color: bisque;
     background-color: aqua;
 } 
-
-
-
 @media screen and (min-width: 1000px) {
     #icono-nav{
         display: none;
@@ -125,4 +116,73 @@ body{
     nav {
         margin: auto;
     }
+}
+
+/*seccion sobre mi*/
+
+#contenedor-sobreMi{
+    background-image: url("/imagenes/Fondos/AbaoutMe-llaves.jpg");
+    background-position:fixed ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+}
+#sobreMi{
+    max-width: 1100px;
+    margin: auto;
+    padding: 100px 15px;
+    color:#111135;
+    display: flex;
+    flex-direction:row;
+    height: 600px;
+}
+.contenedor-fotos{
+    height: 400px;
+}   
+#fotos{
+    width: 400px;
+    margin-left: 150px;
+}
+
+.titulo-seccion{
+    font-size: 22px;
+    text-transform: uppercase;
+    color:rgb(40, 233, 233);
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+.sobremi h2{
+    font-size: 22px;
+    font-weight: 34px;
+    margin: 20px 0;
+    letter-spacing: 2px;
+    color: #fff;
+}
+.sobremi h2 span{
+    color:rgb(40, 233, 233);
+}
+
+.sobremi p{
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 20px;
+    color:rgb(255, 255, 255);
+    width: 300px;
+    letter-spacing: 2px;
+}
+.sobremi a{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border-radius: 30px;
+    padding: 10px 20px;
+    border: 1px solid rgb(40, 233, 233);
+    margin-top: 30px;
+    transition.5s;
+}
+.sobremi a:hover{
+    background-color: rgb(40, 233, 233);
+    color: rgb(255, 255, 255);
 }
